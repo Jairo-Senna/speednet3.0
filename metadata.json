@@ -1,0 +1,6 @@
+{
+  "name": "Controlador Financeiro SpeedNet",
+  "description": "Sistema de gestão financeira e controle de pagamentos, comissões, extras e relatórios mensais para colaboradores da SpeedNet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
