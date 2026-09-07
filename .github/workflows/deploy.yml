@@ -35,7 +35,7 @@ jobs:
         run: npm install
 
       - name: Compilar projeto (Build)
-        run: npm run build
+      - run: npx vite build --base=./
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v4
