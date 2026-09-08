@@ -4,7 +4,8 @@ import {
   createUserWithEmailAndPassword 
 } from '../lib/firebase';
 import { auth } from '../lib/firebase';
-import { ShieldCheck, Mail, Lock, UserPlus, LogIn, AlertCircle, Wifi } from 'lucide-react';
+import { ShieldCheck, Mail, Lock, UserPlus, LogIn, AlertCircle } from 'lucide-react';
+import { SpeedNetLogo } from './SpeedNetLogo';
 
 interface AuthScreenProps {
   onSuccess?: () => void;
@@ -64,14 +65,14 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onGuestLogin }) => {
     <div id="screen-login" className="min-h-screen w-full flex items-center justify-center p-4 sm:p-6 bg-gradient-to-br from-orange-600 via-orange-500 to-amber-600">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-6 sm:p-8 border border-orange-100">
         {/* SpeedNet Brand Header */}
-        <div className="text-center mb-6">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 mb-3 shadow-inner">
-            <Wifi className="w-8 h-8" />
+        <div className="text-center mb-6 flex flex-col items-center">
+          <div className="p-3.5 bg-orange-50/80 rounded-2xl border border-orange-100/80 shadow-xs mb-3">
+            <SpeedNetLogo 
+              variant="full" 
+              size="lg" 
+              subtitle="Controlador Financeiro" 
+            />
           </div>
-          <h1 className="text-2xl font-black text-slate-800 tracking-tight flex items-center justify-center gap-1.5">
-            <span className="text-orange-600">Speed</span>Net
-          </h1>
-          <p className="text-xs uppercase font-bold tracking-widest text-slate-400 mt-1">Controlador Financeiro</p>
         </div>
 
         <div className="mb-6 border-b border-slate-100 pb-4">
